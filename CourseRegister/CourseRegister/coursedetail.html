@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CourseDetail</title>
+    <script type="text/javascript" src="course.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+        }
+
+        td {
+            font-size: 15px;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e6f7ff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Course Detail</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>CourseId</th>
+                <th>Course Name</th>
+                <th>Faculty</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody id="coursedetab"></tbody>
+    </table>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            showFunction();
+        };
+    </script>
+</body>
+</html>

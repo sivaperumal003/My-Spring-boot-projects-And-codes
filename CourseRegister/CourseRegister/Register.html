@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="reg.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="fo">
+    <form action="http://localhost:8080/registeration" method="post">
+        <h1>Registration</h1>
+        <label for="name">Enter Name:</label><br>
+        <input name="name" type="text"><br>
+
+        <label for="email">Enter Email:</label><br>
+        <input name="email" type="email"><br>
+
+       <label for="course">Chose course</label><br>
+       <select id="course" name="course">
+        <option value="Java">Java</option>
+        <option value="python">python</option>
+        <option value="SpringBoot">Springboot</option>
+
+       </select>
+       <br><br>
+       <button type="submit"> Register</button>
+
+    </form>
+    </div>
+    
+</body>
+</html>
